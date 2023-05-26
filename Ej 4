@@ -1,24 +1,24 @@
 import java.util.Scanner;
 
-public class PuestoTorneo {
+public class RelacionCategoria {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        System.out.println("Ingrese el puesto obtenido en el torneo:");
-        int puesto = scanner.nextInt();
+        System.out.println("Ingrese la categoría (a, b o c):");
+        String categoria = scanner.nextLine();
 
-        switch (puesto) {
-            case 1:
-                System.out.println("Obtiene la medalla de oro.");
+        switch (categoria.toLowerCase()) {
+            case "a":
+                System.out.println("Hijo");
                 break;
-            case 2:
-                System.out.println("Obtiene la medalla de plata.");
+            case "b":
+                System.out.println("Padres");
                 break;
-            case 3:
-                System.out.println("Obtiene la medalla de bronce.");
+            case "c":
+                System.out.println("Abuelos");
                 break;
             default:
-                System.out.println("Siga participando.");
+                System.out.println("Categoría no válida");
                 break;
         }
     }
