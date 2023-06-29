@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class DiasDelMes {
+public class Ej13 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
